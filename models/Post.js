@@ -10,11 +10,11 @@ Post.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             autoIncrement: true,
+            primaryKey: true,
         },
         title: {
             type: DataTypes.STRING,
             allowNull: false,
-            primaryKey: true,
         },
         content: {
             type: DataTypes.STRING,
@@ -27,7 +27,7 @@ Post.init(
                 key: 'id',
             },
         },
-    }    
+    }
 );
 
 module.exports = Post;
