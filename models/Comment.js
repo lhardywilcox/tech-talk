@@ -31,6 +31,12 @@ Comment.init(
                 key: 'id',
             },
         },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        underscored: true,
+        modelName: 'comment'
     }
 );
 
